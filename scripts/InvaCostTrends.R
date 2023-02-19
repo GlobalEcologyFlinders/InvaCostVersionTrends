@@ -10,7 +10,6 @@ library(invacost)
 library(dplyr)
 library(stringr)
 library(tidyr)  
-library(stringr)
 library(rms)
 
 # get versions (requires internet connection)
@@ -69,14 +68,12 @@ plot(icDatv4.1.summ$cost.per.year$year, icDatv4.1.summ$cost.per.year$number_esti
 entries.out <- data.frame(icDatv4.1.summ$cost.per.year$year, icDatv1.0.summ$cost.per.year$number_estimates, icDatv2.1.summ$cost.per.year$number_estimates,
                           icDatv3.0.summ$cost.per.year$number_estimates, icDatv4.1.summ$cost.per.year$number_estimates)
 colnames(entries.out) <- c("year", "v1.0", "v2.1", "v3.0", "v4.1")
-setwd("/Users/brad0317/Documents/Papers/Invasive species/Economics/InvaCost/review/data")
 write.csv(entries.out, file="versEntries.csv", row.names = F)
 
 # costs
 cost.out <- data.frame(icDatv4.1.summ$cost.per.year$year, icDatv1.0.summ$cost.per.year$cost/10^9, icDatv2.1.summ$cost.per.year$cost/10^9,
                        icDatv3.0.summ$cost.per.year$cost/10^9, icDatv4.1.summ$cost.per.year$cost/10^9) # note: cost in billions (hence dividing by 10^9)
 colnames(cost.out) <- c("year", "v1.0", "v2.1", "v3.0", "v4.1")
-setwd("/Users/brad0317/Documents/Papers/Invasive species/Economics/InvaCost/review/data")
 write.csv(cost.out, file="versCost.csv", row.names = F)
 
 
@@ -186,5 +183,4 @@ plot(icDatv4.1.sppXyr$Impact_year, icDatv4.1.sppXyr$Species, type="l", xlab="", 
 spp.out <- data.frame(icDatv4.1.sppXyr$Impact_year, icDatv1.0.sppXyr$Species, icDatv2.1.sppXyr$Species, icDatv3.0.sppXyr$Species,
                       icDatv4.1.sppXyr$Species)
 colnames(spp.out) <- c("year", "v1.0", "v2.1", "v3.0", "v4.1")
-setwd("/Users/brad0317/Documents/Papers/Invasive species/Economics/InvaCost/review/data")
 write.csv(spp.out, file="versSpp.csv", row.names = F)
