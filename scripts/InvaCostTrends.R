@@ -1,7 +1,7 @@
 ################################################################################
 ## temporal trends in number of database entries, number of species reported, ##
 ## and annual costs in different versions of the InvaCost database            ##
-## Corey Bradshaw & Ismael Soto                                               ##
+## Corey Bradshaw, Ismael Soto, Boris Leroy                                   ##
 ## February 2023                                                              ##
 ################################################################################
 
@@ -184,3 +184,70 @@ spp.out <- data.frame(icDatv4.1.sppXyr$Impact_year, icDatv1.0.sppXyr$Species, ic
                       icDatv4.1.sppXyr$Species)
 colnames(spp.out) <- c("year", "v1.0", "v2.1", "v3.0", "v4.1")
 write.csv(spp.out, file="versSpp.csv", row.names = F)
+
+
+###############################
+## cumulative unique species ##
+###############################
+# latest version of database
+data(invacost)
+
+# remove 'diverse' category
+invacost <- invacost[-which(invacost$Species == "Diverse/Unspecified"), ]
+
+# remove multiple species entries (e.g. 'Rattus rattus/Mus musculus')
+multi_sp_records <- unique(invacost$Species[grep("/", invacost$Species)])
+invacost <- invacost[-which(invacost$Species %in% multi_sp_records), ]
+
+# entries with unidentified species:
+unidentified_sp <- unique(invacost$Species[grep("sp\\.", invacost$Species)])
+unidentified_sp_groups <- unique(invacost$Species[grep("spp\\.", invacost$Species)])
+
+# remove unidentified species
+invacost <- invacost[-which(invacost$Species %in% c(unidentified_sp,
+                                                    unidentified_sp_groups)), ]
+# number of species
+# total number of species in invacost 
+length(unique(invacost$Species))
+
+# expand the database
+invacost <- invacost[-which(is.na(invacost$Probable_starting_year_adjusted)), ]
+invacost <- invacost[-which(is.na(invacost$Probable_ending_year_adjusted)), ]
+
+invacostexp <- expandYearlyCosts(invacost,
+                                 startcolumn = "Probable_starting_year_adjusted",
+                                 endcolumn = "Probable_ending_year_adjusted")
+
+# filter out years later than 2021
+invacostexp <- invacostexp[-which(invacostexp$Impact_year > 2021), ]
+
+# number of species per year
+results <- data.frame()
+cumulative_sp_names <- NULL
+for (year in seq(min(invacostexp$Impact_year),
+                       max(invacostexp$Impact_year))) {
+  subdb <- invacostexp[invacostexp$Impact_year == year, ]
+  
+  if(any(grep("/", subdb$Species))) {
+    sp_names <- unique(unlist(strsplit(subdb$Species,
+                                       "/")))
+    if(any(sp_names %in% "Unspecified")) {
+      sp_names <- sp_names[which(!(sp_names %in% "Unspecified"))]
+    }
+  } else {
+    sp_names <- unique(subdb$Species)
+  }
+  
+  # create vector that accumulates species names over time
+  cumulative_sp_names <- c(cumulative_sp_names,
+                           sp_names)
+  cumulative_sp_names <- unique(cumulative_sp_names)
+  
+  results <- rbind(results,
+                   data.frame(Year = year,
+                              Number_species = length(sp_names),
+                              Cumulative_number_species = length(cumulative_sp_names)))
+}
+
+plot(results$Year[which(results$Year > 1960)], results$Cumulative_number_species[which(results$Year > 1960)], type="l", xlab="", ylab="cumulative unique species")
+write.csv(results, file="cumSpp.csv", row.names = F)
