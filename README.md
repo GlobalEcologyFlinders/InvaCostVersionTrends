@@ -9,7 +9,7 @@ Prof <a href="https://globalecologyflinders.com/people/#DIRECTOR">Corey J. A. Br
 February 2023 <br>
 <a href=mailto:corey.bradshaw@flinders.edu.au>e-mail</a> <br>
 <br>
-contributors: <a href="https://www.jcu.cz/en/university/staff/person?identita=Soto_Almena_Ismael_110771">Ismael Soto</a>, <a href="https://scholar.google.com/citations?user=fwHUGm0AAAAJ&hl=de">Phillip Haubrock</a>
+contributors: <a href="https://www.jcu.cz/en/university/staff/person?identita=Soto_Almena_Ismael_110771">Ismael Soto</a>, <a href="https://farewe.github.io/markdown-cv/">Boris Leroy</a>, <a href="https://scholar.google.com/citations?user=fwHUGm0AAAAJ&hl=de">Phillip Haubrock</a>
 <br>
 
 ## Scripts
