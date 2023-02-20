@@ -13,7 +13,7 @@ contributors: <a href="https://www.jcu.cz/en/university/staff/person?identita=So
 <br>
 <br>
 
-Accompanies paper: Ahmed, DA, PJ Haubrock, RN Cuthbert, A Bang, I Soto, P Balzani, A Serhan Tarkan, RL Macêdo, L Carneiro, C Diagne, B Leroy, M Kourantidou, E Angulo, AJ Turbelin, MJ Hudgins, D Renault, G Heringer, C Liu, SA Gojery, FJ Oficialdegui, U Arbieu, P Courtois, I Jaríc, TW Bodey, E Briski, CJA Bradshaw, F Courchamp. In review. Recent advances in availability and synthesis of the economic costs of biological invasions. 
+Accompanies paper: <a href="https://www.linkedin.com/in/danish-ali-ahmed-655934192/">Ahmed, DA</a>, PJ Haubrock, RN Cuthbert, A Bang, I Soto, P Balzani, A Serhan Tarkan, RL Macêdo, L Carneiro, C Diagne, B Leroy, M Kourantidou, E Angulo, AJ Turbelin, MJ Hudgins, D Renault, G Heringer, C Liu, SA Gojery, FJ Oficialdegui, U Arbieu, P Courtois, I Jaríc, TW Bodey, E Briski, CJA Bradshaw, <a href="https://www.ese.universite-paris-saclay.fr/en/team-members/franck-courchamp/">F Courchamp</a>. In review. Recent advances in availability and synthesis of the economic costs of biological invasions. 
 
 ## Scripts
 - <code>InvaCostTrends.R</code>
