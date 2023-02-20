@@ -1,7 +1,7 @@
 # <em>InvaCost</em> Version Trends
 <a href="http://invacost.fr"><img align="right" src="www/invacostlogo.png" alt="new InvaCost logo" width="250" style="margin-top: 20px"></a>
 
-Temporal trends in number of database entries, number of species reported, and annual costs in different versions of the <em>InvaCost</em> database (<a href="http://invacost.fr">invacost.fr</a>)
+Temporal trends in number of database entries, number of species reported, and annual costs in different versions of the <em>InvaCost</em> database (<a href="http://invacost.fr">invacost.fr</a>) — see also the <a href="https://github.com/InvaCost">InvaCost organisation</a> page on Github.
 
 <br>
 Prof <a href="https://globalecologyflinders.com/people/#DIRECTOR">Corey J. A. Bradshaw</a> <br>
