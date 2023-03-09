@@ -24,7 +24,7 @@ The invasion of alien species is a global challenge that has received insufficie
 - <code>InvaCostTrends.R</code>
 
 ## Data
-- This directory contains several .csv files listing supplementary information for the article cited above.
+- This directory contains four .xlsx files listing supplementary information for the article cited above (Tables S1-S4).
 
 ## Required R packages
 - <code><a href="https://github.com/InvaCost/invacost">invacost</a></code>
