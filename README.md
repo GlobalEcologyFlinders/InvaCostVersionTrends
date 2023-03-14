@@ -20,6 +20,8 @@ contributors: <a href="https://www.jcu.cz/en/university/staff/person?identita=So
 ## Abstract
 Biological invasions are a global challenge that has received insufficient attention. Recently available cost syntheses have provided policy and decision makers with reliable and up-to-date information on the economic impacts of invasive alien species, aiming to motivate effective management. The resultant InvaCost database is now publicly and freely accessible and enables rapid extraction of monetary cost information globally. This has facilitated knowledge sharing, developed a more integrated and multidisciplinary network of researchers, and forged multidisciplinary collaborations among diverse organisations and stakeholders. Over 50 scientific publications so far have used the database and provided detailed assessments of invasion costs across geographic, taxonomic, and spatio-temporal scales. These studies have been instrumental in guiding policy and legislative decisions, while attracting public and media attention. We provide an overview of the improved availability, reliability, and defragmentation of monetary costs, how this has enhanced invasion science as a discipline, and outline directions for future development
 
+<img align="center" src="www/InvaCostPubs.jpg" alt="new InvaCost publications" width="900" style="margin-top: 20px">
+
 ## Scripts
 - <code>InvaCostTrends.R</code>
 
@@ -32,9 +34,6 @@ Biological invasions are a global challenge that has received insufficient atten
 - <code>tidyr</code>
 - <code>rms</code>
 - <code>stringr</code>
-
-<img align="center" src="www/InvaCostPubs.jpg" alt="new InvaCost publications" width="900" style="margin-top: 20px">
-
 
 <a href="https://www.flinders.edu.au"><img align="bottom-left" src="www/Flinders_University_Logo_Horizontal_RGB_Master.png" alt="Flinders University logo" width="200" style="margin-top: 20px"></a>
 <a href="https://globalecologyflinders.com"><img align="bottom-left" src="www/GEL Logo Kaurna New Transp.png" alt="GEL logo" width="200" style="margin-top: 20px"></a>
