@@ -33,7 +33,7 @@ Biological invasions are a global challenge that has received insufficient atten
 - <a href="https://github.com/cjabradshaw/InvaCostVersionTrends/blob/main/scripts/InvaCostTrends.R"><code>InvaCostTrends.R</code></a>
 
 ## <a href="https://github.com/cjabradshaw/InvaCostVersionTrends/tree/main/data">Data</a>
-- This directory contains four .xlsx files listing supplementary information for the article cited above (Tables S1-S4).
+- This directory contains one .xlsx file with 5 worksheets listing supplementary information Tables S1-S5.
 
 ## Required R packages
 - <code><a href="https://github.com/InvaCost/invacost">invacost</a></code>
