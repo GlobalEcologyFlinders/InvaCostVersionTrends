@@ -33,7 +33,13 @@ Biological invasions are a global challenge that has received insufficient atten
 - <a href="https://github.com/cjabradshaw/InvaCostVersionTrends/blob/main/scripts/InvaCostTrends.R"><code>InvaCostTrends.R</code></a>
 
 ## <a href="https://github.com/cjabradshaw/InvaCostVersionTrends/tree/main/data">Data</a>
-- This directory contains one .xlsx file with 5 worksheets listing supplementary information Tables S1-S5.
+- This directory contains six .xlsx files:
+    - <strong>Table S1<strong>: InvaCost publications List of 52 peer-reviewed articles that have used the InvaCost database, categorised according to themes
+    - <strong>Table S2</strong>: Compilation of policy documents that have referenced <em>InvaCost</em> studies
+    - <strong>Table S3</strong>: News articles Altmetric scores, examples of news stories with associated outlets, and number of tweets
+    - <strong>Table S4</strong>: Summary of the descriptors Type of cost merged and Management type used in <em>InvaCost</em> database
+    - <strong>Table S5</strong>: Number of established invasive species per country including monetary costs from the <em>InvaCost</em> database
+    - <strong>References</strong>: References for all Supplementary tables
 
 ## Required R packages
 - <code><a href="https://github.com/InvaCost/invacost">invacost</a></code>
